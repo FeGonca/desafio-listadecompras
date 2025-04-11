@@ -1,0 +1,138 @@
+@import url(global.css);
+
+header {
+    margin-block: 5rem 3rem;
+}
+
+main {
+    & nav {
+        margin-bottom: 1rem;
+    }
+}
+
+section {
+    & h1 {
+        margin-bottom: 2.7rem;
+    }
+
+    & form {
+        margin-bottom: 2.5rem;
+
+        & input {
+            width: 28.1875rem;
+            height: 2.75rem;
+            padding: 0 1.125rem;
+            background: var(--background-secondary);
+            border: 2px solid var(--border-primary);
+            border-radius: 0.75rem;
+            margin-right: 0.7rem;
+
+            font: var(--font-link);
+            color: var(--content-tertiary);
+
+        }
+
+        & input:hover{
+            border: 2px solid var(--border-hover);
+        }
+
+        & input:focus {
+            border: 2px solid var(--color-brand);
+            outline: none;
+        }
+
+        & button {
+            width: 10rem;
+            height: 2.75rem;
+            background: var(--color-brand);
+            border-radius: 0.75rem;
+            border: 2px;
+
+            font: var(--font-label);
+            color: var(--always-white);
+
+        }
+
+        & button:hover {
+            background: var(--color-brand-hover);
+        }
+    }
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-bottom: 2.25rem;
+
+        & li {
+            background: var(--background-secondary);
+            border-radius: 0.75rem;
+            height: 49px;
+            padding: 0.5rem 0.75rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+
+            & div {
+                display: flex;
+                gap: 0.75rem;
+
+                & .check {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+
+                    width: 1rem;
+                    height: 1rem;
+                    border: 1px solid var(--border-primary);
+                    border-radius: 0.375rem;
+
+                    background: var(--background-secondary);
+                }
+
+                & .check:hover {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+
+                    width: 1rem;
+                    height: 1rem;
+                    border: 1px solid var(--border-hover);
+                    border-radius: 0.375rem;
+
+                    background: var(--background-secondary);
+                }
+
+                & .check:checked {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+
+                    width: 1rem;
+                    height: 1rem;
+                    border: 1px solid var(--color-brand);
+                    border-radius: 0.375rem;
+
+                    background: var(--color-brand);
+                }
+            }
+        }
+    }
+
+    & .item-remove {
+        background: var(--color-danger);
+        border-radius: 0.75rem;
+        height: 49px;
+        padding: 0.5rem 0.75rem;
+
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+
+        color: var(--always-white);
+    }
+}
